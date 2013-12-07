@@ -1,0 +1,52 @@
+body{
+	background-color: #aaadca;
+}
+.header{
+	background-color: #888888;
+	padding-left: 10px;
+	height:30px;
+}
+.header input{
+	float: right;
+	padding-right: 20px;
+	padding-left: 30px;
+	border-left:1px solid black;
+}
+#menu li {
+    position: relative;
+    float:right;
+
+}
+ul#menu, ul#menu ul.sub-menu{
+    padding:0;
+    margin: 0;
+}
+
+ul#menu li ul.sub-menu li a{
+	text-decoration: none;
+    color: #fff;
+    background: #666;
+    width: 80px;
+    padding: 5px;
+    display:inline-block;
+    border-bottom: 1px solid black;
+
+}
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
+.addTask {
+	position: absolute;
+	left:10%;
+	bottom: 10%;
+	text-align: center;
+}
+.addTask textarea{
+	float:left;
+}

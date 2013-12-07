@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="./sth.js"></script>
+  </head>
+  <body>
+  	<div class = "main">
+	    <div class= "header">
+			<ul id="menu">
+	    		<li><input type="image" src="./images/menu.png" alt="Submit" width="30" height="30"/>
+		        	<ul class="sub-menu">
+			            <li><a href="#">Clear</a></li>
+			            <li><a href="#">Delete</a></li>
+			            <li><a href="#">Search</a></li>
+			            <li><a href="#">Due</a></li>
+			            <li><a href="#">Complete</a></li>
+			            <li><a href="#">Incomplete</a></li>
+	        		</ul>
+    			</li>
+    		</ul>
+	    	<img src="./images/task.jpg" width="30" height="30"> Tasks
+	    </div>
+	    <div>
+	    	<table id="ToDoListTable" width="350px" border="1">
+        	</table>
+
+			Total Work pending <a id="pTotal"></a>  </div>
+	    <div class = "addTask">
+	    	<textarea id = "txt1" rows = "1" cols="50" placeholder="new notice"></textarea>
+	    	<input type = "button" value = "Add" onclick="addList('ToDoListTable')" />
+	    </div>
+    </div>
+  </body>
+</html>
