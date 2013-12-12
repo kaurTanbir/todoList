@@ -1,5 +1,5 @@
 body{
-	background-color: #aaadca;
+	background-color: #aaabca;
 }
 .header{
 	background-color: #888888;
@@ -30,7 +30,6 @@ ul#menu li ul.sub-menu li a{
     padding: 5px;
     display:inline-block;
     border-bottom: 1px solid black;
-
 }
 ul#menu li ul.sub-menu {
     display:none;
@@ -50,3 +49,4 @@ ul#menu li:hover ul.sub-menu {
 .addTask textarea{
 	float:left;
 }
+

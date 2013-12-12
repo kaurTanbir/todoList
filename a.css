@@ -1,0 +1,24 @@
+#progress {
+	width: 50px;
+	height: 16px;
+	border: 1px solid #111;
+	border-radius: 8px;
+}
+	 
+#progress span{
+	background-color: #CC0000;
+	color: #FFF;
+	height: 16px;
+	display: block;
+	width: 0%;
+	border-radius: 8px;
+}	 
+
+#progress span.almost {
+	background: #F60;
+}
+
+#progress span.complete {
+	background: #00CC00;
+}
+	

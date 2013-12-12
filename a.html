@@ -1,12 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="./jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="./jquery-ui-1.10.3.custom.min.js"></script>
 
-<script type="text/javascript" src="sth.js"></script>
+<link rel="stylesheet" type="text/css" href="a.css"/>
+</head>
+<body>
+	<div id="progress">
+		<span></span>
+	</div>
+	<br />
+	<input type="text" id="textbox"/>
+	<input type="button" id="btnProgress" value="update"/>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#btnProgress').click(function(){
+		var v = $('#textbox').val();
+		var myspan = $('#progress span');
+		myspan.css({'width': v + '%'}).html(v + '%');
 
-<table width=100%>
-    <tr><td>
-        <script type="text/javascript">
-            ListToDoItems();
-        </script>
-    </td></tr>
-</table>
-<br/>
-<a href="javascript:AddItem()">Add Item</a>
+		if (v > 75) {
+			myspan.addClass('complete');
+		} else if (v > 50) {
+			myspan.addClass('almost');
+		}
+	});
+});
+</script>
+</html>
